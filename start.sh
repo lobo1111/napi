@@ -6,7 +6,9 @@ fi
 
 while :
 do
-    napi.sh /mnt/storage
+    for FILE in `/mnt/storage`; do
+        napi.sh $FILE
+    done
     sleep $SLEEP
 done
 
